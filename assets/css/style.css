@@ -1,0 +1,229 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    background-image: url(../images/headerTravelexa.png);
+    height: 100vh;
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+}
+
+/* SEÇÃO DE SOBRE */
+.about{
+    padding: 100px 0;
+    background-color: #E2A72C;
+    text-align: center;
+}
+.about h2{
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    color: #000;
+}
+.about-text, .about-image{
+   padding: 30px 0;
+}
+.about-text p{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    text-align: justify;
+}
+.about-text button{
+    margin: 10px 0;
+    background-color: #212745;
+    border: 1px solid #212745;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #E2A72C;
+}
+.about-image img{
+    width: 100%;
+    text-align: center;
+    direction: ltr;
+}
+
+/* SEÇÃO DO FORM */
+.subscription
+{
+    padding: 100px 0;
+    background-color: #212745;
+}
+.subscription h2{
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+}
+.subscription-form{
+    padding: 30px 70px !important;
+}
+input[type=text], input[type=email], input[type=tel]{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-size: 18px;
+}
+.dddDoCliente{
+    padding: 0 10px 0 0 !important;
+}
+.telefoneCliente{
+    padding: 0 0 0 10px !important;
+}
+input[type=submit]{
+    margin: 10px 0;
+    background-color: #E2A72C;
+    border: 1px solid #E2A72C;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #212745;
+}
+.subscription-form label{
+    color: #fff;
+}
+
+/* SEÇÃO DE FAQ */
+/* .faq{
+    padding: 60px 0;
+    background-color: #fff;
+}
+.faq h2{
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+.perguntas-faq{
+    padding: 30px 30px !important;
+}
+
+
+.accordion{
+	transform: translateZ(0);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.accordion > .accordion-toggle{
+	position: absolute;
+	opacity: 0;
+	display: none;
+}
+
+.accordion > label{
+	position: relative;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	font-size: 14px;
+	font-weight: 700;
+	border-top: 1px solid #ddd;
+	background: #fff;
+	cursor: pointer;
+}
+
+.accordion > label:after {
+  content: '\f078';
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-family: fontawesome;
+  transform: rotate(90deg);
+  transition: .3s transform;
+}
+
+.accordion > section{
+	height: 0;
+	transition: .3s all;
+	overflow: hidden;
+}
+
+.accordion > .accordion-toggle:checked ~ label:after{
+ transform: rotate(0deg);
+}
+
+.accordion > .accordion-toggle:checked ~ section{
+  height: 200px;
+}
+
+.accordion > section p {
+  margin: 15px 0;
+  padding: 0 20px;
+  font-size: 12px;
+  line-height: 1.5;
+} */
+
+
+/* RODAPÉ */
+footer{
+    padding: 30px 0;
+    background-color: #212745;
+}
+
+footer p{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        background-image: url(../images/headerTravelexaMobile.jpg);
+        height: 73vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    .about h2{
+        font-family: 'Montserrat';
+        font-size: 30px;
+        font-weight: 800;
+        text-align: center;
+        color: #000;
+    }
+    .subscription h2{
+        font-family: 'Montserrat';
+        font-size: 30px;
+        font-weight: 800;
+        text-align: center;
+        color: #fff;
+    }
+    .subscription-form{
+        padding: 30px 20px !important;
+    }
+    .dddDoCliente{
+        padding: 0 !important;
+    }
+    .telefoneCliente{
+        padding: 0 !important;
+    }
+  }
