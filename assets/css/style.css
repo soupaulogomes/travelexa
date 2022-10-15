@@ -82,6 +82,7 @@ input[type=text], input[type=email], input[type=tel]{
     border: 1px solid #fff;
     background-color: transparent;
     font-size: 18px;
+    color: #fff;
 }
 .dddDoCliente{
     padding: 0 10px 0 0 !important;

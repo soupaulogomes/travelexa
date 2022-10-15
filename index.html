@@ -33,7 +33,7 @@
         <div class="container">
             <h2>CADASTRE SEU CUPOM<br>E VEJA SE ESTÁ PREMIADO</h2>
             <div class="col-md-12 subscription-form">
-                <form action="" method="post">
+                <form action="  " method="post">
                     <input type="text" name="nome" id="nomeCompleto" placeholder="Nome Completo" required>
                     <input type="email" name="e-mail" id="emailContato" placeholder="E-mail" required>
                     <input type="text" name="cpf" id="cpfCliente" placeholder="CPF" required>
@@ -48,7 +48,7 @@
                     <label for="termosUso">Li e Aceito os termos de uso</label><br>
                     <input type="checkbox" name="regulamento" id="regulamentoConcorda" required>
                     <label for="regulamentoConcorda">Concordo com os termos do regulamento</label><br>
-                    <input type="submit" value="Cadastrar Agora">
+                    <input type="submit" value="Cadastrar Agora" id="cadastrarUsuario" onclick="cadastrarCliente()">
                 </form>
             </div>
         </div>
@@ -145,4 +145,8 @@
     </footer>
 </body>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<script src="cadastroCliente.js"></script>
 </html>
