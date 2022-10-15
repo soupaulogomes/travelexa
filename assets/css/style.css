@@ -11,8 +11,8 @@ a{
 
 .header{
     background-image: url(../images/headerTravelexa.png);
-    height: 100vh;
-    background-repeat: none;
+    height: 95vh;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -194,7 +194,10 @@ footer p{
     text-align: center;
     margin: 0;
 }
-
+footer a{
+    color: #E2A72C;
+    font-weight: 600;
+}
 @media only screen and (max-width: 600px) {
     .header{
         background-image: url(../images/headerTravelexaMobile.jpg);
