@@ -143,8 +143,31 @@
     </footer>
 </body>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<script type="text/javascript">
+  function cadastrarCliente() {
+
+    document.getElementById("cadastrarUsuario").disabled = true;
+
+    var cadastro = new Object();
+
+    cadastro.cpf = cpfCliente.value;
+    cadastro.nome = nomeCompleto.value;    
+    cadastro.ddd = dddCliente.value;
+    cadastro.data_nascimento = null;
+    cadastro.email = emailContato.value;
+    cadastro.telefone = telefoneContato.value;
+    cadastro.codigo_contrato = numeroContrato.value;
 
 
-<script src="cadastroCliente.js"></script>
+    //Cria a empresa
+    $.ajax({type: 'post',url: 'https://travelexa.herokuapp.com/cadastros/',data: JSON.stringify(cadastro),contentType: "application/json; charset=utf-8", success: function (data) {
+    if (confirm("cadastro realizado com sucesso")) document.location = "sucesso/";
+
+    }});
+
+}
+</script>
+<!-- <script src="cadastroCliente.js"></script> -->
 </html>
